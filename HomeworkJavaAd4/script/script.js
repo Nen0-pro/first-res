@@ -14,7 +14,7 @@ let allMaleStudents = students => students.filter(s => s.gender === 'Male' && s.
 
 let adultFemales = students => students.filter(s => s.gender === 'Female' && s.age > 18)
 
-let averageAge = students => students.map(s => s.age).reduce((sum, avgAge)  => sum + avgAge / 200, 0)
+let averageAge = students => students.map(s => s.age).reduce((sum, avgAge)  => sum + avgAge / students.length, 0)
 
 let femLnameEndWithA = students => students.filter(s => s.lastName.endsWith('a'))
 
